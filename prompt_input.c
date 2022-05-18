@@ -50,3 +50,4 @@ char *strip_newline(char *str)
 
 	return (str);
 }
+

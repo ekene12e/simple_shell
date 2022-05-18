@@ -6,15 +6,13 @@
  */
 int main(void)
 {
-	char *input;
 	int status, child_pid;
-	char *argv[2];
-	argv[1] = NULL;
+	char *argv[2, *input];
 
+	argv[1] = NULL;
 	/* handle SIGINT */
 	if (signal(SIGINT, sig_handler) == SIG_ERR)
 		exit(98);
-
 	while (1)
 	{
 		/* get input */
@@ -24,9 +22,7 @@ int main(void)
 			write(STDOUT_FILENO, "\n", 2);
 			exit(0);
 		}
-
 		argv[0] = input;
-
 		/* create process */
 		child_pid = fork();
 		if (child_pid == -1)
@@ -49,3 +45,4 @@ int main(void)
 	}
 	return (0);
 }
+

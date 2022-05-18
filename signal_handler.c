@@ -10,3 +10,4 @@ void sig_handler(int sig)
 	write(STDOUT_FILENO, "\n", 2);
 	exit(0);
 }
+
