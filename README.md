@@ -81,5 +81,3 @@ ALx: Low-Level Programming with C
 ## Acknowledgments
 
 * All mentors in the ALX program
-* The creators of the Betty linter
-* Betty Holberton
