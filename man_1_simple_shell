@@ -74,4 +74,4 @@ All files are to be compiled using "gcc -Wall -Werror -Wextra -pedantic *. -o bs
 
 Report bugs pertaining to the shell to https://github.com/jxvo and https://github.com/TyEdge
 .SH AUTHORS
-Jonathan Vasquez, Ty Edge
+Ekene Ezema, George Oladayo
