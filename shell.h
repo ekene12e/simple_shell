@@ -29,7 +29,7 @@ char *try_paths(char **p, char *cmd);
 
 /*built-ins*/
 void env_builtin(void);
-void exiter(char **cmd, char *b);
+void quiter(char **cmd, char *b);
 int is_builtin(char **cmd, char *b);
 void prompt_printer(void);
 void sighandle(int n);
