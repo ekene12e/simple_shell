@@ -7,7 +7,7 @@
 int main(void)
 {
 	int status, child_pid;
-	char *argv[2, *input];
+	char *argv[2], *input;
 
 	argv[1] = NULL;
 	/* handle SIGINT */
