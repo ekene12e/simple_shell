@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  * main - implements a super simple shell
  *
@@ -10,7 +9,6 @@ int main(void)
 	char *input;
 	int status, child_pid;
 	char *argv[2];
-
 	argv[1] = NULL;
 
 	/* handle SIGINT */
@@ -21,8 +19,6 @@ int main(void)
 	{
 		/* get input */
 		input = prompt();
-
-
 		if (input == NULL)
 		{
 			write(STDOUT_FILENO, "\n", 2);
@@ -48,10 +44,8 @@ int main(void)
 				return (1);
 			}
 		}
-
 		wait(&status);
 		free(input);
 	}
-
 	return (0);
 }
