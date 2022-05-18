@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * token_maker - splits a string into an array of tokens
+ * token_maker -function splits a string into an array of tokens
  * @str: string to be tokenized and packaged
  *
- * Return: vector array of string tokens
+ * Return: array of string tokens
  */
 
 char **token_maker(char *str)
