@@ -20,7 +20,7 @@ int is_builtin(char **cmd, char *b)
 	}
 	else if (_strcmp(*cmd, builtins.exit) == 0)
 	{
-		exiter(cmd, b);
+		quiter(cmd, b);
 		return (1);
 	}
 	else
